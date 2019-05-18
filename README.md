@@ -14,7 +14,7 @@ The steps start off introducing you to how Node and Express work. In the last tw
 
 ### Pro tips <a id="pro-tips"></a>
 
-* In each step, we have **bolded** any jargon that you may or may not be familiar with. These terms are explained in the [Keywords](https://node-girls.gitbook.io/tutorials/~/drafts/-LHS9Z9LAjRfFBmBArrY/primary/intro-to-backend-development-with-node.js/keywords) section.
+* In each step, we have **bolded** any jargon that you may or may not be familiar with. These terms are explained in the [Keywords](intro-to-backend-development-with-node.js/keywords.md) section.
 
   ​
 
