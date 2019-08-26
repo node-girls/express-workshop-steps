@@ -18,7 +18,7 @@ You'll note that in the data folder there's a new file called `posts.json`.
 
 JSON is a type of file for structuring data in a readable way. It is also a really popular format for sending data across the web.
 
-JSON is a string representation of a Javascript object. JSON objects convert really easily to Javascript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.
+JSON is a string representation of a JavaScript object. JSON objects convert really easily to JavaScript objects, and vice versa, with `JSON.parse()` and `JSON.stringify()`.
 
 \(If you're not sure about JavaScript objects, have a chat with your mentor and your team.\)
 
@@ -133,7 +133,7 @@ console.log(file.toString());
 
 ## Converting from JSON to JavaScript object
 
-`file` is in JSON format right now. If we want to access the blog post message inside `file`, we need to parse it from JSON back to a JavaScipt object.
+`file` is in JSON format right now. If we want to access the blog post message inside `file`, we need to parse it from JSON back to a JavaScript object.
 
 Add this next bit of code to your `fs.readFile`'s callback function:
 
