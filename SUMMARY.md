@@ -2,10 +2,10 @@
 
 * [Welcome!](README.md)
 
-## Intro to backend development with Express
+## Intro to backend development with Express <a id="intro-to-backend-development-with-node.js"></a>
 
-* [Getting started](intro-to-backend-development-with-node.js/getting-started.md)
 * [Tutorial](intro-to-backend-development-with-node.js/tutorial/README.md)
+  * [Getting started](intro-to-backend-development-with-node.js/tutorial/getting-started.md)
   * [Step 1: Setting up your project](intro-to-backend-development-with-node.js/tutorial/step-1-setting-up-your-project.md)
   * [Step 2: Installing Express](intro-to-backend-development-with-node.js/tutorial/step-2-installing-express.md)
   * [Step 3: Building the server](intro-to-backend-development-with-node.js/tutorial/step-3-building-the-server.md)

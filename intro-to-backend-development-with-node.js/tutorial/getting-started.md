@@ -1,7 +1,8 @@
-# Getting started
+---
+description: Here's what you need to do to get set up for the tutorial.
+---
 
-  
-Here's what you need to do to get set up for the tutorial.
+# Getting started
 
 ## Install Node.js
 
@@ -30,7 +31,7 @@ First of all, you will need to create a GitHub account.  After that, go to [http
 
 In the top right-hand corner of the page, you should see a button that says Fork.  Click that to copy the code into your own GitHub account.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 Now that you have your own **fork** of the Node Girls repository, you can download it onto your computer.
 
@@ -58,7 +59,7 @@ If you don't want a GitHub account, you can just download the files directly fro
 
 Go to [https://github.com/node-girls/express-workshop](https://github.com/node-girls/express-workshop), and look for the green button that says Clone or Download.  Download the files as a `.zip`, then go and find them.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 
 

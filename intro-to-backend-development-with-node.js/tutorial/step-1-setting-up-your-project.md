@@ -1,5 +1,7 @@
 # Step 1: Setting up your project
 
+🚨Have you set up your computer yet? If not, head to the [getting started guide](getting-started.md)!🚨
+
   
 When creating a Node.js project, you will be installing a lot of different things along the way. If you want to share your project with others, you need to have a list of the things you installed, so that other people know what to install in order to run the project.
 
