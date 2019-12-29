@@ -24,15 +24,13 @@ JSON is a string representation of a Javascript object. JSON objects convert rea
 
 If you look at `posts.json` will see there's already one blog post there. The format is:
 
-{% code-tabs %}
-{% code-tabs-item title="posts.json" %}
+{% code title="posts.json" %}
 ```javascript
 {
     [timestamp]: [blog post message]
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 We've used a timestamp as the key so that the blog posts are listed in chronological order. Also, it's a record of when the blog post was created.
 
@@ -44,25 +42,21 @@ Built-in Node modules \(core Node modules\) are rather like the built-in Express
 
 To use `fs`, you'll need to require it at the top of your server file:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var fs = require('fs');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 The method we need to write to your hard drive is `fs.writeFile`.
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 fs.writeFile('location-of-your-file-goes-here', yourData, function (error) {
     // do something
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Let's look at this function more closely.
 
@@ -78,15 +72,13 @@ The `'location-of-your-file-goes-here'` bit will be replaced with the actual pat
 
 To read data that's already there, you would use `fs.readFile`. The way to use `fs.readFile` is very similar to `fs.writeFile`:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 fs.readFile('location-of-your-file-goes-here', function (error, file) {
     // do something
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 * Argument 1: the location of the file you want to write to
 * Argument 2: the callback function
@@ -97,15 +89,13 @@ Let's read the data from the `posts.json` file. Make sure you've `require`d the 
 
 Add this code to your server \(put it anywhere after the `require`s for now\):
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 fs.readFile(__dirname + '/data/posts.json', function (error, file) {
     console.log(file);
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 `__dirname` is a Node global object that gives you a path to current working directory. It's handy if we want to avoid writing the whole path out in full.
@@ -113,23 +103,19 @@ fs.readFile(__dirname + '/data/posts.json', function (error, file) {
 
 If you restart the server, you'll probably see something like this:
 
-{% code-tabs %}
-{% code-tabs-item title="Command line" %}
+{% code title="Command line" %}
 ```bash
 <Buffer 7b 0a 20 20 20 20 22 31 34 36 37 33 39 30 33 35 36 32 39 31 22 3a 20 22 54 68 69 73 20 69 73 20 6d 79 20 76 65 72 79 20 66 69 72 73 74 20 62 6c 6f 67 ... >
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 This is actually the contents of your `posts.json` file, but in a format called a **buffer**. To make it a bit more human-readable, you can convert the file to a string, like this:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 console.log(file.toString());
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Converting from JSON to JavaScript object
 
@@ -137,13 +123,11 @@ console.log(file.toString());
 
 Add this next bit of code to your `fs.readFile`'s callback function:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var parsedFile = JSON.parse(file);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Now `parsedFile` is a normal JavaScript object, and we can access the data inside it.
 

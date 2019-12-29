@@ -16,8 +16,7 @@ We're going to try sending different responses at different endpoints. Remember 
 
 For example:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 app.get("/", function (req, res) {
     res.send("Hello World!");
@@ -27,8 +26,7 @@ app.get("/chocolate", function (req, res) {
     res.send("Mm chocolate :O");
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 _Challenge:_ Add some code so that your server sends one message when the endpoint is `/node` and another one when it's `/girls`.

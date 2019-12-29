@@ -22,7 +22,7 @@ The command-line program that comes with Windows is not the correct one for this
 
 ### I've never used the command line before...
 
-That's ok! It's not as scary as it looks. We've got a [handy cheatsheet](../../command-line-cheatsheet.md) for you to use to learn some of the basic commands. Feel free to refer to it any time during the tutorial.
+That's ok! It's not as scary as it looks. We've got a [handy command-line cheatsheet](../command-line-cheatsheet.md) for you to use to learn some of the basic commands. Feel free to refer to it any time during the tutorial - it's listed in the sidebar.
 
 ## Install a text editor
 

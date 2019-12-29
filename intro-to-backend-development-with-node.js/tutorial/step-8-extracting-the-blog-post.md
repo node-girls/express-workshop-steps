@@ -14,28 +14,23 @@ This time though, `express-formidable` is not built-in, we need to explicitly in
 
 Go to your terminal and install express-formidable:
 
-{% code-tabs %}
-{% code-tabs-item title="Command line" %}
+{% code title="Command line" %}
 ```bash
 npm install express-formidable --save
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Next, you need to `require` the `express-formidable` library so you can use it in your code. You can't use dashes in JavaScript variable names, so just call it `var formidable`.  Require it somewhere near the top of `server.js`, near the other `require`d code.
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var formidable = require('express-formidable');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Now somewhere between your `require`s and your `/create-post` endpoint, add this:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 // require stuff above
 
@@ -43,18 +38,15 @@ app.use(formidable());
 
 // endpoint stuff below
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Finally, inside your /create-post function, add this:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 console.log(req.fields);
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Refresh your server and have another go at writing a blog post.
 

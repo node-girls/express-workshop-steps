@@ -9,13 +9,11 @@ As we install Express, we'll need to update the `package.json` to add Express as
 **Run the following command in your terminal:**  
 
 
-{% code-tabs %}
-{% code-tabs-item title="Command line" %}
+{% code title="Command line" %}
 ```bash
 $ npm install express --save
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Express should now be installed. Check your `package.json` file to make sure it has been added as a dependency. It will look something like this:
 

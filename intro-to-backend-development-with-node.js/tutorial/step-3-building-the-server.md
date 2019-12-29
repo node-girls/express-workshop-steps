@@ -26,13 +26,11 @@ We already installed Express in Step 2, but we need to make sure it is included 
 
 To import Express, write the following inside `server.js`:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var express = require('express');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### 3. Initialise the server
 
@@ -40,14 +38,12 @@ To initialise our server, we just need to call the `express()` function. This wi
 
 Add the second line of code to your `server.js` file:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var express = require('express');
 var app = express();
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### 4. Start 'listening' for potential requests
 
@@ -57,8 +53,7 @@ We use the **`app.listen`** method to do this. This method takes two arguments: 
 
 We're going to run our server on port `3000`, and call`console.log` in our callback function. Update your `server.js` file, calling the `app.listen` method:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var express = require('express');
 var app = express();
@@ -67,8 +62,7 @@ app.listen(3000, function () {
   console.log('Server is listening on port 3000. Ready to accept requests!');
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### 5. Switch the server on!
 
@@ -76,13 +70,11 @@ You've built your server, but it isn't running yet. We need to run a command in 
 
 Type the following command in your terminal:
 
-{% code-tabs %}
-{% code-tabs-item title="Command line" %}
+{% code title="Command line" %}
 ```bash
 $ node server.js
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 If you see this, congratulations! You have built yourself a server!
 

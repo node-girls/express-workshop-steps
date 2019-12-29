@@ -21,5 +21,5 @@
   * [More ideas](intro-to-backend-development-with-node.js/extra/more-ideas.md)
   * [Individual Blog Posts](intro-to-backend-development-with-node.js/extra/individual-blog-posts.md)
 * [Keywords](intro-to-backend-development-with-node.js/keywords.md)
-* [Command-line cheatsheet](command-line-cheatsheet.md)
+* [Command-line cheatsheet](intro-to-backend-development-with-node.js/command-line-cheatsheet.md)
 

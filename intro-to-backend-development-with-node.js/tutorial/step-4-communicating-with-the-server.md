@@ -13,15 +13,13 @@ What does a handler function look like in Express?
 
 The `get()` method is used to define a handler function in Express. It takes two parameters: the **endpoint** at which to trigger an action \(we'll explain more about this in the next step\), and the handler function that tells it exactly what to do. Here's a simple "Hello World!" example:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 app.get("/", function (req, res) {
     res.send("Hello World!");
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Here, we are telling our server to respond with "Hello World!" when someone tries to access the webpage.
 
@@ -31,8 +29,7 @@ We are now making a handler function with a custom message in our response. You 
 
 Update your `server.js` file with an empty `app.get()` function:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var express = require("express");
 
@@ -46,8 +43,7 @@ app.listen(3000, function () {
   console.log("Server is listening on port 3000. Ready to accept requests!");
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Try to `console.log` the `req` object inside the handler function. Restart your server, refresh the browser, then go to your terminal to see what it looks like. You should see a lot of data come through.
 
@@ -57,8 +53,7 @@ We want our handler function to send back a message to the client. To do that, w
 
 Update your handler function like so:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 var express = require("express");
 var app = express();
@@ -71,20 +66,17 @@ app.listen(3000, function () {
   console.log("Server is listening on port 3000. Ready to accept requests!");
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### 3. Check it out in your browser
 
 Quit your server in the terminal with `ctrl + c`. Then restart it to run your new changes.
 
-{% code-tabs %}
-{% code-tabs-item title="Command line" %}
+{% code title="Command line" %}
 ```bash
 $ node server.js
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Now, open your favourite browser \(we like Chrome\), and navigate to `http://localhost:3000`. If you see your message in the browser, congratulations! You just sent your first response from the server.
 

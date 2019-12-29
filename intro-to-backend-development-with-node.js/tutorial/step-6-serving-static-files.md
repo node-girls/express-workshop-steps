@@ -8,13 +8,11 @@ To be able to send any file from the server we need a special, built-in **middle
 
 Say we want to serve all the static assets in our `public` folder. The `express.static()` function will look like this:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 app.use(express.static("public"));
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Serve static files from your server
 

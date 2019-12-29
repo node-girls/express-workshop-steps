@@ -17,15 +17,13 @@ Express's URL parameters use a `:` for dynamic parts of the URL:
 
 Let's add a handler for serving individual blog posts:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 app.get('/posts/:postId', function (req, res) {
     res.send('post id: ' + req.params.postId);
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 What do you think you'll see when you visit [http://localhost:3000/posts/abc123](http://localhost:3000/posts/abc123) in your browser?
 
@@ -39,8 +37,7 @@ Right now we're just sending the plain text of your blog post, but you probably 
 
 Run `npm install --save mustache-express`, then check the documentation for [mustache-express](https://www.npmjs.com/package/mustache-express) and [Express's templating](http://expressjs.com/en/guide/using-template-engines.html). You'll need to create a template file in `views/post.mustache` like this:
 
-{% code-tabs %}
-{% code-tabs-item title="views/post.mustache" %}
+{% code title="views/post.mustache" %}
 ```javascript
 <!DOCTYPE html>
 <html>
@@ -55,8 +52,7 @@ Run `npm install --save mustache-express`, then check the documentation for [mus
   </body>
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 If you get stuck, check out the [example solution](https://github.com/node-girls/express-workshop-complete/tree/templating) :\)
 

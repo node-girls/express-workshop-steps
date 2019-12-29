@@ -18,20 +18,17 @@ We're going to add a form to the `index.html` page, so that you can write your b
 
 Open up the `index.html` file in your text editor. If you have a look, you should see this:
 
-{% code-tabs %}
-{% code-tabs-item title="index.html" %}
+{% code title="index.html" %}
 ```markup
 <div class="entry-container">
     <!--PASTE YOUR CODE HERE!! -->
 </div>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **Replace the greyed-out comment with this code snippet:**
 
-{% code-tabs %}
-{% code-tabs-item title="index.html" %}
+{% code title="index.html" %}
 ```markup
 <h3>Create a blog post</h3>
 <form action="/create-post" method="POST">
@@ -39,8 +36,7 @@ Open up the `index.html` file in your text editor. If you have a look, you shoul
     <button type="submit">Send</button>
 </form>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Let's look at this form a bit more closely.
 
@@ -60,15 +56,13 @@ All you need to do is define a route to deal with requests that come through on 
 
 Let's remind ourselves of a `GET` route in Express:
 
-{% code-tabs %}
-{% code-tabs-item title="server.js" %}
+{% code title="server.js" %}
 ```javascript
 app.get('/my-lovely-endpoint', function (req, res) {
     res.send('Hello there!');
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 But this time we want to define a route to deal with a `POST` request. What do you think you would need to do differently? Experiment and see if you can define a route for the `/create-post` endpoint!
 
