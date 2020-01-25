@@ -23,5 +23,5 @@ The steps start off introducing you to how Node and Express work. In the last tw
 
 ## Let's go! <a id="lets-go"></a>
 
-Let's start by setting up your computer - head over to our [getting started guide](https://node-girls.gitbook.io/tutorials/~/drafts/-LHS9Z9LAjRfFBmBArrY/primary/intro-to-backend-development-with-node.js/getting-started).
+Let's start by setting up your computer - head over to our [getting started guide](https://node-girls.gitbook.io/intro-to-express/intro-to-backend-development-with-node.js/tutorial/getting-started).
 
